@@ -30,6 +30,10 @@
                 width: 80%;
                 margin: 0 auto 0 auto;
             }
+            .caption {
+                font-size: 0.75rem;
+                text-align: center;
+            }
         </style>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3"></script>
@@ -40,10 +44,13 @@
     <body>
         <div class="content">
             <div class="page-header title" style="margin-left: auto; ;margin-right:auto">
-                <h3>Atlantic Hurricanes and Typhoons <small>1851-2014</small></h3>
+                <h3>Atlantic Ocean's Hurricanes and Typhoons <small>1851-2014</small></h3>
                 <p>~50,000 Incidents</p>
             </div>
+            <figure>
             <iframe class="map" width="1200" height="600" scrolling="no" frameborder="yes" src="https://fusiontables.google.com/embedviz?q=select+col6+from+1qJcLmM5Y5n9uelUuLKlggnVkZpI58Kc9yG18BbZU&amp;viz=MAP&amp;h=false&amp;lat=27.48253445789791&amp;lng=-48.52382812500002&amp;t=1&amp;z=4&amp;l=col6&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+                <figcaption class="caption">Rendered Using Google Fusion Tables</figcaption>
+            </figure>
             <!-- <div class="row" id="googft-mapCanvas"></div> -->
             <br></br>
             <div class='post'>
