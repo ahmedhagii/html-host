@@ -11777,7 +11777,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-info" style="font-size: 25px !important">
-**Flight Delays Predictive Model:**
+<strong>Flight Delays Predictive Model:</strong>
 </div><hr>
 
 </div>
@@ -11952,7 +11952,7 @@ ibIAAAAASUVORK5CYII=
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-success" style="font-size: 25px !important">
-**Data Cleansing:**
+<strong>Data Cleansing:</strong>
 </div><hr>
 
 </div>
@@ -12111,7 +12111,7 @@ Percentage of rows with missing data: 0.36%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">na</span> <span class="o">=</span> <span class="n">balanced_data</span><span class="o">.</span><span class="n">AIR_TIME</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span>
@@ -12127,68 +12127,6 @@ Percentage of rows with missing data: 0.36%
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/Users/Ahmed/anaconda2/lib/python2.7/site-packages/numpy/lib/function_base.py:1110: RuntimeWarning: Mean of empty slice.
-  avg = a.mean(axis)
-/Users/Ahmed/anaconda2/lib/python2.7/site-packages/numpy/core/_methods.py:80: RuntimeWarning: invalid value encountered in double_scalars
-  ret = ret.dtype.type(ret / rcount)
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-6-89431f0d8b00&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">for</span> ind <span class="ansi-green-fg">in</span> indices<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span>     origin<span class="ansi-blue-fg">,</span> dest <span class="ansi-blue-fg">=</span> balanced_data<span class="ansi-blue-fg">.</span>loc<span class="ansi-blue-fg">[</span>ind<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;ORIGIN&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;DEST&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>values
-<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg">     </span>matches <span class="ansi-blue-fg">=</span> balanced_data<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">(</span>balanced_data<span class="ansi-blue-fg">.</span>ORIGIN <span class="ansi-blue-fg">==</span> origin<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">&amp;</span> <span class="ansi-blue-fg">(</span>balanced_data<span class="ansi-blue-fg">.</span>DEST <span class="ansi-blue-fg">==</span> dest<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>AIR_TIME<span class="ansi-blue-fg">.</span>values
-<span class="ansi-green-intense-fg ansi-bold">      6</span>     good_matches <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">~</span>np<span class="ansi-blue-fg">.</span>isnan<span class="ansi-blue-fg">(</span>matches<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span>     avg <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>average<span class="ansi-blue-fg">(</span>matches<span class="ansi-blue-fg">[</span>good_matches<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/Users/Ahmed/anaconda2/lib/python2.7/site-packages/pandas/core/ops.pyc</span> in <span class="ansi-cyan-fg">wrapper</span><span class="ansi-blue-fg">(self, other, axis)</span>
-<span class="ansi-green-intense-fg ansi-bold">    877</span> 
-<span class="ansi-green-intense-fg ansi-bold">    878</span>             <span class="ansi-green-fg">with</span> np<span class="ansi-blue-fg">.</span>errstate<span class="ansi-blue-fg">(</span>all<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;ignore&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 879</span><span class="ansi-red-fg">                 </span>res <span class="ansi-blue-fg">=</span> na_op<span class="ansi-blue-fg">(</span>values<span class="ansi-blue-fg">,</span> other<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    880</span>             <span class="ansi-green-fg">if</span> is_scalar<span class="ansi-blue-fg">(</span>res<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    881</span>                 raise TypeError(&#39;Could not compare {typ} type with Series&#39;
-
-<span class="ansi-green-fg">/Users/Ahmed/anaconda2/lib/python2.7/site-packages/pandas/core/ops.pyc</span> in <span class="ansi-cyan-fg">na_op</span><span class="ansi-blue-fg">(x, y)</span>
-<span class="ansi-green-intense-fg ansi-bold">    781</span> 
-<span class="ansi-green-intense-fg ansi-bold">    782</span>         <span class="ansi-green-fg">if</span> is_object_dtype<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">.</span>dtype<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 783</span><span class="ansi-red-fg">             </span>result <span class="ansi-blue-fg">=</span> _comp_method_OBJECT_ARRAY<span class="ansi-blue-fg">(</span>op<span class="ansi-blue-fg">,</span> x<span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    784</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    785</span> 
-
-<span class="ansi-green-fg">/Users/Ahmed/anaconda2/lib/python2.7/site-packages/pandas/core/ops.pyc</span> in <span class="ansi-cyan-fg">_comp_method_OBJECT_ARRAY</span><span class="ansi-blue-fg">(op, x, y)</span>
-<span class="ansi-green-intense-fg ansi-bold">    761</span>         result <span class="ansi-blue-fg">=</span> lib<span class="ansi-blue-fg">.</span>vec_compare<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">,</span> op<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    762</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 763</span><span class="ansi-red-fg">         </span>result <span class="ansi-blue-fg">=</span> lib<span class="ansi-blue-fg">.</span>scalar_compare<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">,</span> op<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    764</span>     <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">    765</span> 
-
-<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12297,7 +12235,7 @@ Data shape: (2020463, 14)
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-success" style="font-size: 25px !important">
-**One Hot Encoding Categorical values:**
+<strong>One Hot Encoding Categorical values:</strong>
 </div><hr>
 
 </div>
@@ -12458,7 +12396,7 @@ Data shape: (2020463, 14)
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-success" style="font-size: 25px !important">
-**Training a base line model:**
+<strong>Training a base line model:</strong>
 </div><hr>
 
 </div>
@@ -12570,7 +12508,7 @@ avg / total       0.73      0.73      0.73    215565
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Okay so the first result we got is <strong>~70% Accuracy</strong>, that's not bad to start with.</p>
 <p><div class="alert alert-warning" >
-**Note** that for this problem, 'accuracy' metric is not enough. The more interesting metric is the 'recall' of the Delayed flights. This is because people are interested in how accurate are you when you tell them their flight is going to be delayed (no one is interested in knowing it's gonna be on time!).
+<strong>Note</strong> that for this problem, 'accuracy' metric is not enough. The more interesting metric is the 'recall' of the Delayed flights. This is because people are interested in how accurate are you when you tell them their flight is going to be delayed (no one is interested in knowing it's gonna be on time!).
 </div></p>
 <p>Recall for Delayed means the following: out of all the actually delayed flights, how many was the model able to predict. Here the model was able to predict 76% of them meaning when the model tells you your flight is delayed, there is a 76% chance it's correct.</p>
 <p><strong>Overall Accuracy: 73%</strong></p>
@@ -12585,7 +12523,7 @@ avg / total       0.73      0.73      0.73    215565
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-success" style="font-size: 25px !important">
-**More Preprocessing:**
+<strong>More Preprocessing:</strong>
 </div><hr>
 
 </div>
@@ -13047,7 +12985,7 @@ avg / total       0.73      0.73      0.73    215565
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-success" style="font-size: 25px !important">
-**Comparing ML Models:**
+<strong>Comparing ML Models:</strong>
 </div><hr>
 
 </div>
@@ -13068,7 +13006,7 @@ avg / total       0.73      0.73      0.73    215565
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-info" style="font-size: 15px !important">
-**Random Forests:**
+<strong>Random Forests:</strong>
 </div><hr>
 
 </div>
@@ -13149,7 +13087,7 @@ avg / total       0.67      0.67      0.66      6460
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-info" style="font-size: 15px !important">
-**Logistic Regression:**
+<strong>Logistic Regression:</strong>
 </div><hr>
 
 </div>
@@ -13244,7 +13182,7 @@ avg / total       0.67      0.67      0.66      6460
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-info" style="font-size: 15px !important">
-**K-Nearest Neighbour:**
+<strong>K-Nearest Neighbour:</strong>
 </div><hr>
 
 </div>
@@ -13336,7 +13274,7 @@ avg / total       0.61      0.61      0.61      6460
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-info" style="font-size: 15px !important">
-**Neural Network:**
+<strong>Neural Network:</strong>
 </div><hr>
 
 </div>
@@ -17370,7 +17308,7 @@ avg / total       0.62      0.62      0.62      6460
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <div class="alert alert-info" style="font-size: 25px !important">
-**Results Interpretation:**
+<strong>Results Interpretation:</strong>
 </div><hr>
 
 </div>
