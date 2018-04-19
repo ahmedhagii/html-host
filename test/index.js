@@ -3,8 +3,8 @@ var MAP_CONFIGS = {
     center: { lat: 46.8182, lng: 8.2275 }
 };
 
-// var GET_MARKERS_URL = "./fakeData.php";
-var GET_MARKERS_URL = "http://neighbourhood-dev.arkham.enterprises/data.php";
+var GET_MARKERS_URL = "./fakeData.php";
+// var GET_MARKERS_URL = "http://neighbourhood-dev.arkham.enterprises/data.php";
 
 var marker;
 var map;
